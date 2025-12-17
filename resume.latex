@@ -39,6 +39,9 @@
 
 \raggedbottom
 \raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=2em
 \setlength{\tabcolsep}{0in}
 \setlength{\footskip}{5pt}
 
