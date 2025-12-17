@@ -5,19 +5,9 @@ on:
     branches: [main]
     paths:
       - "resume.latex"
-      - "**/*.latex"
-      - "**/*.tex"
-      - "**/*.sty"
-      - "**/*.cls"
-      - "**/*.bib"
   pull_request:
     paths:
       - "resume.latex"
-      - "**/*.latex"
-      - "**/*.tex"
-      - "**/*.sty"
-      - "**/*.cls"
-      - "**/*.bib"
   workflow_dispatch: {}
 
 jobs:
@@ -37,7 +27,6 @@ jobs:
         with:
           root_file: resume.latex
           args: -pdf -file-line-error -interaction=nonstopmode -halt-on-error
-          cache: true
 
       - name: Clean aux files
         run: |
