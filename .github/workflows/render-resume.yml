@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "resume.latex"
+      - ".github/workflows/render-resume.yml"
       - "**/*.latex"
       - "**/*.tex"
       - "**/*.sty"
@@ -13,6 +14,7 @@ on:
   pull_request:
     paths:
       - "resume.latex"
+      - ".github/workflows/render-resume.yml"
       - "**/*.latex"
       - "**/*.tex"
       - "**/*.sty"
