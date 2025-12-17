@@ -16,6 +16,7 @@ jobs:
     permissions:
       contents: read
       issues: write
+      pull-requests: write
     steps:
       - name: Create GitHub App token (push only)
         if: github.event_name == 'push'
