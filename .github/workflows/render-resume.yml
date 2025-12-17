@@ -1,0 +1,59 @@
+name: Render resume.pdf
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "resume.latex"
+      - "**/*.latex"
+      - "**/*.tex"
+      - "**/*.sty"
+      - "**/*.cls"
+      - "**/*.bib"
+  pull_request:
+    paths:
+      - "resume.latex"
+      - "**/*.latex"
+      - "**/*.tex"
+      - "**/*.sty"
+      - "**/*.cls"
+      - "**/*.bib"
+  workflow_dispatch: {}
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Build PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.latex
+          args: -pdf -file-line-error -interaction=nonstopmode -halt-on-error
+          cache: true
+
+      - name: Clean aux files
+        run: |
+          rm -f \
+            *.aux *.log *.out *.fls *.fdb_latexmk *.synctex.gz \
+            *.toc *.lof *.lot *.bbl *.blg *.bcf *.run.xml
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdf
+          path: resume.pdf
+          if-no-files-found: error
+
+      - name: Commit updated resume.pdf (main only)
+        if: github.event_name == 'push'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: render resume.pdf"
+          file_pattern: resume.pdf
