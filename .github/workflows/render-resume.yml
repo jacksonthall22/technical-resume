@@ -82,3 +82,6 @@ jobs:
         with:
           commit_message: "chore: render resume.pdf"
           file_pattern: resume.pdf
+          commit_user_name: "jackson-s-pdf-resume-committer[bot]"
+          commit_user_email: "250229833+jackson-s-pdf-resume-committer[bot]@users.noreply.github.com"
+          commit_author: "${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>"
