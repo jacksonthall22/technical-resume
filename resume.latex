@@ -106,6 +106,16 @@
 \section{Work Experience}
 \cvheadingstart
   \cvheading
+    {Hyperchess.ai}{Side project}
+    {Founder}{Jun 2023 -- Present}
+  \cvitemstart
+    \cvitem{Creating a suite of chess improvement tools infused with generative AI}
+    \cvitem{Designing thoughtful user experiences with a SvelteKit + TS stack}
+    \cvitem{Building and training HyprGM, a custom multimodal LLM for chess instruction, using open-source parts}
+    \cvitem{Using computer vision (YOLOv8) to extract chess positions from freely available instructional chess videos, timestamping and aligning each change to the transcript}
+  \cvitemend
+
+  \cvheading
     {Mathpix}{Full-time}
     {Machine Learning Engineer}{Mar 2025 -- Oct 2025}
   \cvitemstart
@@ -116,22 +126,12 @@
 
   \cvheading
     {Flipmine.com}{Half-time}
-    {Data Scientist \& Machine Learning Engineer}{Jan 2024 -- Present}
+    {Data Scientist \& Machine Learning Engineer}{Jan 2024 -- Mar 2025}
   \cvitemstart
     \cvitem{Using deep learning to improve product matching and recommendation algorithms}
     \cvitem{Implementing custom ML architectures and ELT training pipelines from scratch}
     \cvitem{Using Docker and nginx to scale backend resources}
     \cvitem{Reduced calls to 3rd party APIs by 10x with custom-built cache servers}
-  \cvitemend
-
-  \cvheading
-    {Hyprchs.com}{Side project}
-    {Founder}{Jun 2023 -- Present}
-  \cvitemstart
-    \cvitem{Creating a suite of chess improvement tools infused with generative AI}
-    \cvitem{Designing thoughtful user experiences with a SvelteKit + TS stack}
-    \cvitem{Building and training HyprGM, a custom multimodal LLM for chess instruction, using open-source parts}
-    \cvitem{Using computer vision (YOLOv8) to extract chess positions from freely available instructional chess videos, timestamping and aligning each change to the transcript}
   \cvitemend
 
   \cvheading
