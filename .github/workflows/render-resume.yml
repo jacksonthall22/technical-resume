@@ -37,7 +37,6 @@ jobs:
         with:
           root_file: resume.latex
           args: -pdf -file-line-error -interaction=nonstopmode -halt-on-error
-          cache: true
 
       - name: Clean aux files
         run: |
