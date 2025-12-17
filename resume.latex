@@ -1,5 +1,4 @@
 \documentclass[letterpaper,11pt]{article}
-% conductor: render-test
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
