@@ -14,13 +14,31 @@ jobs:
   render:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-      pull-requests: write
+      contents: read
+      issues: write
     steps:
-      - name: Checkout
+      - name: Create GitHub App token (push only)
+        if: github.event_name == 'push'
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ vars.GH_APP_ID }}
+          private-key: ${{ secrets.GH_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ github.event.repository.name }}
+
+      - name: Checkout (pull_request)
+        if: github.event_name == 'pull_request'
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
+
+      - name: Checkout (push, with GitHub App token)
+        if: github.event_name == 'push'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          token: ${{ steps.app-token.outputs.token }}
 
       - name: Build PDF
         uses: xu-cheng/latex-action@v3
