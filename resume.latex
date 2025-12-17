@@ -39,6 +39,9 @@
 
 \raggedbottom
 \raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=2em
 \setlength{\tabcolsep}{0in}
 \setlength{\footskip}{5pt}
 
@@ -96,12 +99,21 @@
   \cvitemstart
     \cvitem{Honors Thesis: \textit
     {The Introspective Case Study Framework: Crowdsourced Introspection as a Research Pipeline for Humanlike General Intelligence}
-    (\href{https://tinyurl.com/ICSFramework}{https://tinyurl.com/ICSFramework})}
+    (\href{https://tinyurl.com/ICSFr}{https://tinyurl.com/ICSFr})}
   \cvitemend
 \cvheadingend
 
 \section{Work Experience}
 \cvheadingstart
+  \cvheading
+    {Mathpix}{Full-time}
+    {Machine Learning Engineer}{Mar 2025 -- Oct 2025}
+  \cvitemstart
+    \cvitem{Worked across ML + devops teams to design, debug, train, and monitor OCR models for converting STEM documents to text}
+    \cvitem{Overhauled chemistry recognition stack (annotation schemas, training targets, validation/error-correction, and test pipelines) to improve OCR of complex organic chemistry diagrams}
+    \cvitem{Implemented and improved core chemistry parsing/validation features including robust ring/chain detection, recursive SMILES parsing, stereochemistry handling (chiral centers, E/Z), and exports to ChemDraw}
+  \cvitemend
+
   \cvheading
     {Flipmine.com}{Half-time}
     {Data Scientist \& Machine Learning Engineer}{Jan 2024 -- Present}
