@@ -5,19 +5,11 @@ on:
     branches: [main]
     paths:
       - "resume.latex"
-      - "**/*.latex"
-      - "**/*.tex"
-      - "**/*.sty"
-      - "**/*.cls"
-      - "**/*.bib"
+      - ".github/workflows/render-resume.yml"
   pull_request:
     paths:
       - "resume.latex"
-      - "**/*.latex"
-      - "**/*.tex"
-      - "**/*.sty"
-      - "**/*.cls"
-      - "**/*.bib"
+      - ".github/workflows/render-resume.yml"
   workflow_dispatch: {}
 
 jobs:
