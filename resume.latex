@@ -1,5 +1,4 @@
 \documentclass[letterpaper,11pt]{article}
-% conductor: pr-11-test
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
