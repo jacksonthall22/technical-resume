@@ -109,52 +109,53 @@
     {Hyperchess.ai}{Side project}
     {Founder}{Jun 2023 -- Present}
   \cvitemstart
-    \cvitem{Creating a suite of chess improvement tools infused with generative AI}
-    \cvitem{Designing thoughtful user experiences with a SvelteKit + TS stack}
-    \cvitem{Building and training HyprGM, a custom multimodal LLM for chess instruction, using open-source parts}
-    \cvitem{Using computer vision (YOLOv8) to extract chess positions from freely available instructional chess videos, timestamping and aligning each change to the transcript}
+    \cvitem{Creating the first language model (LM) purpose-built for hyper-personalized chess education}
+    \cvitem{Trained a LM architecture that bridges chess and language, mostly using trained LMs and neural chess engines (PyTorch, huggingface, AlphaZero)}
+    \cvitem{Building a knowledge production economy using RL \& embarrasingly-parallel GPUs (modal.com) to mine for strategies/language that cause downstream performance lift}
+    \cvitem{Trying to use production-ready stacks from day one to learn new \& best tech}
   \cvitemend
 
   \cvheading
     {Mathpix}{Full-time}
     {Machine Learning Engineer}{Mar 2025 -- Oct 2025}
   \cvitemstart
-    \cvitem{Worked across ML + devops teams to design, debug, train, and monitor OCR models for converting STEM documents to text}
-    \cvitem{Overhauled chemistry recognition stack (annotation schemas, training targets, validation/error-correction, and test pipelines) to improve OCR of complex organic chemistry diagrams}
-    \cvitem{Implemented and improved core chemistry parsing/validation features including robust ring/chain detection, recursive SMILES parsing, stereochemistry handling (chiral centers, E/Z), and exports to ChemDraw}
+    \cvitem{Worked across ML \& devops teams to design, launch training runs for, and monitor PyTorch OCR models for converting STEM documents to markdown/HTML}
+    \cvitem{Debugged poor losses when required by stepping through layer operations manually, used ML/information theory to determine where context was lost}
+    \cvitem{Overhauled chemistry recognition stack end-to-end (data annotation schemas, ML targets, post-inference error-correction, test pipelines), enabled OCR for PhD-level organic chemistry diagrams}
+    \cvitem{Improved core chemistry data structures \& algs, including ring/chain detection, recursive SMILES parsing, stereochemistry handling (chiral centers, E/Z), export formats}
   \cvitemend
 
   \cvheading
     {Flipmine.com}{Half-time}
     {Data Scientist \& Machine Learning Engineer}{Jan 2024 -- Mar 2025}
   \cvitemstart
-    \cvitem{Using deep learning to improve product matching and recommendation algorithms}
-    \cvitem{Implementing custom ML architectures and ELT training pipelines from scratch}
-    \cvitem{Using Docker and nginx to scale backend resources}
-    \cvitem{Reduced calls to 3rd party APIs by 10x with custom-built cache servers}
+    \cvitem{Designed ELT pipelines for large-scale data streams coming from eBay \& Amazon}
+    \cvitem{Implemented product recommendation \& matching algs using deep learning from scratch}
+    \cvitem{Used Docker and nginx to manage distributed backend resources}
+    \cvitem{Reduced calls to expensive 3rd party APIs by 10x with custom-built cache servers}
   \cvitemend
 
   \cvheading
     {Dynamic Organics}{Full-time}
     {Machine Learning Engineer}{Jan 2023 -- Apr 2023}
   \cvitemstart
-    \cvitem{Researched \& implemented state-of-the-art ML algorithms for multivariate time-series forecasting and hierarchical reconciliation of forecasts}
-    \cvitem{Improved mean absolute percentage error (MAPE) by over three percentage points (5\% to 1.5\%)}
+    \cvitem{Researched \& implemented state-of-the-art multivariate time-series forecasting algs with hierarchical reconciliation of forecasts}
     \cvitem{Cleaned and organized data from a \textasciitilde{}5TB database}
-    \cvitem{Designed a custom ML architecture leveraging several datasets, some with a time-series structure and others with graphical or hierarchical structures}
+    \cvitem{Designed custom ML architectures leveraging graphical and hierarchical datasets}
+    \cvitem{Improved mean absolute percentage error (MAPE) by 70% (5\% to 1.5\%)}
   \cvitemend
 
   \cvheading
     {Aimchess.com}{Full-time}
     {Senior Python Developer}{May 2021 -- Nov 2022}
   \cvitemstart
-    \cvitem{Designed chess-specific data structures and graph search algorithms to extract metrics on hundreds of thousands of user chess games while balancing constraints like accuracy, understandability, runtime, and compute cost}
+    \cvitem{Designed low-level chess-specific data structures and graph search algs to extract metrics over hundreds of thousands of user chess games, balancing accuracy \& speed and managing compute costs}
   \cvitemend
 \cvheadingend
 
 \section{Skills}
-\textbf{Programming \& Tools:} Git, Python, TypeScript, Jupyter, C++, Java, Flask, Svelte(Kit), SQL/NoSQL \\
-\textbf{ML \& AI:} PyTorch, TensorFlow, Pandas, Numpy, Matplotlib, LLMs, Ollama, Transformer families, Multimodal architectures, RAG, Vector DBs, Embedding spaces, AI/ML system design, Geometric foundations of deep learning and generalization/AGI \\
-\textbf{Other:} Spanish (11yr), Chess (2300+ on Lichess)
+\textbf{Programming \& Tools:} Git, Python (15+yr), TypeScript, Jupyter, C++, Java, FastAPI, Svelte(Kit), SQL/NoSQL \\
+\textbf{ML \& AI:} PyTorch, LLMs, Ollama,  Transformers, Multimodal learning, Vector DBs, AI/ML system design, Embedding spaces, Dynamical systems, Geometric intuition deep learning and generalization/AGI \\
+\textbf{Other:} Spanish – conversational (11yr), Chess – 2398 peak online
 
 \end{document}
