@@ -142,7 +142,7 @@
     \cvitem{Researched \& implemented state-of-the-art multivariate time-series forecasting algs with hierarchical reconciliation of forecasts}
     \cvitem{Cleaned and organized data from a \textasciitilde{}5TB database}
     \cvitem{Designed custom ML architectures leveraging graphical and hierarchical datasets}
-    \cvitem{Improved mean absolute percentage error (MAPE) by 70% (5\% to 1.5\%)}
+    \cvitem{Improved mean absolute percentage error (MAPE) by 70\% (5\% to 1.5\%)}
   \cvitemend
 
   \cvheading
